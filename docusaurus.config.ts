@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool - the new CMS demo',
+  title: 'Hadean Docs Demo Site',
+  tagline: 'Docs are Cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -15,8 +15,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Hadean', // Usually your GitHub org/user name.
+  projectName: 'docusaurus-test', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -67,11 +67,11 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/Hadean_Logo_Tagline_Colour_2022_2K.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Hadean Docs',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Hadean Logo',
         src: 'img/logo.svg',
       },
       items: [
