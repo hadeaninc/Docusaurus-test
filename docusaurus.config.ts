@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Dinosaurs are cool - the new CMS demo',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -21,7 +21,6 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
-  
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -29,7 +28,7 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  
+
   themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
@@ -50,7 +49,6 @@ const config: Config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
@@ -65,6 +63,8 @@ const config: Config = {
     ],
   ],
 
+
+
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -75,13 +75,12 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          {type: 'docsVersionDropdown',
           position: 'left',
-          label: 'Guides',
+          dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
+          dropdownActiveClassDisabled: true,
         },
-        {to: '/blog', label: 'Blog Test', position: 'left'},
+        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -96,7 +95,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Guides',
+              label: 'Tutorial',
               to: '/docs/intro',
             },
           ],
@@ -139,10 +138,6 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
-
-
 };
-
-
 
 export default config;
