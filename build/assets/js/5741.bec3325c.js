@@ -1,1 +1,0 @@
-(self.webpackChunkdecap=self.webpackChunkdecap||[]).push([[5741],{5741:()=>{}}]);
